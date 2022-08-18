@@ -4,8 +4,9 @@ workflow HelloInput {
     String name_input
   }
   call WriteGreeting {
-    input:
+    input{
       name_for_greeting = name_input
+    }
   }
   output {
     File final_output = WriteGreeting.Greeting_output
