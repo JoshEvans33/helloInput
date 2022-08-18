@@ -1,0 +1,8 @@
+version: 1.2
+workflows:
+  - subclass: WDL
+    primaryDescriptorPath: helloInput.wdl
+    testParameterFiles: none
+    authors:
+      - name: Josh Evans
+        email: evans@broadinstitute.org
